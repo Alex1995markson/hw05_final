@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} O авторе{% endblock %}
+{% block header %}
+	<div class="ml-auto">
+		<ol class="breadcrumb">
+    		<li class="breadcrumb-item active" aria-current="page">Информация о авторе</li>
+  		</ol>
+	</div>	  
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<section class="col-4 bg-info">
+			<div class="mx-auto pt-2">
+				<img src="{% static 'img/author.jpeg' %}" alt="AUTHOR" style="width:100%">
+				<h1 class="text-center pt-1">Алекс М</h1>
+			</div>
+			<hr >
+			<h5 class="text-center">Контактная информация</h5>
+			<ul>
+				<li><i class="fa fa-phone"></i> +x-xxx-xxx-xx-xx</li>
+				<li><i class="fa fa-envelope"></i> alexmarksonit@mail.com</li>
+				<li><i class="fa fa-globe"></i> в процессе... </li>
+				<li><i class="fa fa-map-marker"></i> Россия, Москва</li>
+			<ul>
+			<h5 class="text-center pt-2">Образование</h5>
+			<em>Начальное</em>
+			<p class="text-dark">...</p>
+			<em>Средее</em>
+			<p class="text-dark">...</p>
+			<em>Высшее</em>
+			<p class="text-dark">...</p>
+		
+		</section>
+
+		<section class="col-8">
+			<h1>Профиль</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+			<h1 class="">Опыт работы</h1>
+			<div class="card-deck">
+				<div class="card ">
+					<img class="card-img-top" width="100px" height="70px" src="{% static 'img/logo2020.svg'%}" alt="Card image cap">
+										
+					<div class="card-body ">
+						<span class="card-title">Описание работы</span>
+							<p class="card-text"></p>
+							<p class="p-2 mb-3 bg-dark text-white position-relative">
+								<i class="fas fa-user-tie"></i>
+								Позиция: Full Stack Developer
+							</p>
+							<p class="p-2 mb-3 bg-dark text-white">
+								<i class="fa fa-building"></i>
+								<a href="https://sm2.ai" class="card-link-company">Компания: sm2.ai</a>
+							</p>
+							<p class="p-2 mb-3 bg-dark text-white">
+								<i class="fa fa-phone"></i>                                    
+								Номер контакта: (444)-444-4444
+							</p>
+					</div>
+					<div class="card-footer">
+						<span class="text-muted">Даты</span>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" width="100px" height="70px" src="{% static 'img/logo_mob.svg' %}" alt="Card image cap">
+					<div class="card-body">
+						<span class="card-title">Test engineer</span>
+						<p class="card-text"></p>
+						<p class="p-2 mb-3 bg-dark text-white">
+							<i class="fas fa-user-tie"></i>
+							Позиция: Test engineer / devOps
+						</p>
+						<p class="p-2 mb-3 bg-dark text-white">
+							<i class="fa fa-building"></i>
+							<a href="https://www.rgsbank.ru/" class="card-link-company">Компания: RGS bank </a>
+						</p>
+						<p class="p-2 mb-3 bg-dark text-white">
+							<i class="fa fa-phone"></i>                                    
+							Номер контакта: 8 (495)-56-72-12
+						</p>
+					</div>
+					<div class="card-footer">
+						<span class="text-muted">Даты:</span>
+					</div>
+				</div>
+								
+			</div>
+		</section>
+	</div> 
+{% endblock %} 

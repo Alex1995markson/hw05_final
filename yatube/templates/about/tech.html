@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% load static %}
+{% block links %}
+  <link rel="stylesheet" href="{% static 'style/about_tech.css' %}">
+{% endblock %}
+{% block header %}
+	<div class="ml-auto">
+		<ol class="breadcrumb">
+    		<li class="breadcrumb-item active" aria-current="page">Техническая информация о авторе</li>
+  	</ol>
+	</div>	  
+{% endblock %}
+
+{% block content %}
+  <section class="section">
+    <div class="wall">
+      <div class="v-boxes">
+        <div class="box">
+          <span class="tooltip">CSS3</span>
+          <div class="box-face">
+            <div class="box-text"><i class="fa fa-css3"></i></div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="tooltip">JavaScript</span>
+          <div class="box-face">
+            <div class="box-text">
+              <img src="{% static 'img/js.png'%}">
+            </div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>        
+        </div>
+        <div class="box">
+          <span class="tooltip">Bulma</span>
+          <div class="box-face">
+            <div class="box-text">
+              <img src="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" alt="">
+            </div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="tooltip">Django</span>
+          <div class="box-face">
+            <div class="box-text">
+              <img src="{% static 'img/dj.png' %}">
+            </div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="v-boxes second">
+        <div class="box">
+          <span class="tooltip">Python</span>
+          <div class="box-face">
+            <div class="box-text">
+              <img src="{%static 'img/python.png'%}" alt="">
+            </div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="tooltip">HTML5</span>
+          <div class="box-face">
+            <div class="box-text"><i class="fa fa-html5"></i></div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="tooltip">Gitlab</span>
+          <div class="box-face">
+            <div class="box-text"><i class="fa fa-gitlab"></i></div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="v-boxes third">
+        <div class="box">
+          <span class="tooltip">CSV</span>
+          <div class="box-face">
+            <div class="box-text">
+              <i class="fa fa-git"></i>
+            </div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <span class="tooltip">VueNative</span>
+          <div class="box-face">
+            <div class="box-text"><img src="https://vue-native.io/images/logo.png" alt=""></div>
+          </div>
+          <div class="box-back">
+            <div class="box-text">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="v-boxes forth">
+        <div class="box link">
+          <div class="box-face">
+            <div class="box-text"><i class="fa fa-github""></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,104 @@
+<footer class="footer-area footer--light">
+    <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="footer-widget">
+                        <div class="widget-about">
+                            <img src="https://via.placeholder.com/250x60?text=Yatube" alt="" class="img-fluid">
+                            <p>Сайт о блогерстве</p>
+                            <ul class="contact-details">
+                                <li>
+                                    <span class="icon-earphones"></span> Позвони нам:
+                                    <a href="tel:344-755-111">xxx-xxx-xxx</a>
+                                </li>
+                                <li>
+                                    <span class="icon-envelope-open"></span> Поддержка:
+                                    <a href="mailto:alexmarksonit@gmail.com">alex@support.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- end /.col-md-4 -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <div class="footer-menu footer-menu--1">
+                            <h4 class="footer-widget-title">Популярые категории</h4>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'main:index' %}">Все записи</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about:author' %}">Автор</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about:tech' %}">Техническая информация</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'login' %}">Логин</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end /.footer-menu -->
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <div class="footer-menu">
+                            <h4 class="footer-widget-title">Другие пункты</h4>
+                        </div>
+                        <!-- end /.footer-menu -->
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- end /.col-lg-3 -->
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <div class="footer-menu no-padding">
+                            <h4 class="footer-widget-title">Поддержи нас</h4>
+                        </div>
+                        <!-- end /.footer-menu -->
+                    </div>
+                    <!-- Ends: .footer-widget -->
+                </div>
+                <!-- Ends: .col-lg-3 -->
+
+            </div>
+            <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+    </div>
+    <!-- end /.footer-big -->
+
+    <div class="mini-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        {% if user.is_authenticated %}
+                            <p>© {{ year }}
+                                <a href="{% url 'main:index' %}">Yatube</a>. Все права защищены. Создано
+                                <a href="#">Дополнительно</a>
+                            </p>
+                        {% else %}
+                            <p>
+                                <a href="#">Alex M</a>. 
+                            </p>
+                        {% endif %}
+                    </div>
+
+                    <div class="go_top">
+                        <span class="icon-arrow-up"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

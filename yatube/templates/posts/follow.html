@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load addclass %}
+{% block title %} Отслеживание всх интересующих постов {% endblock %}
+{% block header %} Обновления по избранным авторам {% endblock %}
+{% block content %}
+    {% include 'posts/includes/switcher.html' %}
+
+    {% for post in page_obj %}
+            <div>
+                Автор: 
+                <a href="{% url 'main:profile' post.author.username %}">
+                    {{ post.author.username|extra_addclass:"text-primary" }} 
+                </a>
+                <p>Дата публикации: {{ post.pub_date|date:"d M Y" }} </p>
+            </div>
+            <a class="btn btn-primary my-sm-0" href="{% url 'main:post_detail' post.pk %}">Читать</a>
+            <p>{{ post.text|linebreaksbr }}</p>
+            {% if post.group.slug %}
+                Перейти на группу:
+                <a href="{% url 'main:group' post.group.slug %}">
+                    {{ post.group.title }}
+                </a>
+            {% endif %}
+            <p>
+                {% if user.is_authenticated %}
+                    <div class="ml-2">
+                        <a href="{% url 'main:post_edit' post.pk %}" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Редактировать</a>
+                    </div>
+                {% endif %}
+            </p>
+                {% if not forloop.last %}<hr>{% endif %}
+            {% endfor %}
+
+            {% include 'posts/includes/paginator.html' %}
+
+{% endblock %}
+
