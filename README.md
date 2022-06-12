@@ -6,7 +6,7 @@
 ## Инструкция по настройка и развертыванию проекта
 Клонируйте репозиторий и перейдите в него в командной строке:
 ```
-git clone git@github.com:anton12ru/hw05_final.git
+git clone git@github.com:Alex1995markson/hw05_final.git
 cd hw05_final
 ```
 Создайте и активируйте виртуальное окружение:
